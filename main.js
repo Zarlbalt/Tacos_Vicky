@@ -1,3 +1,4 @@
+//navbar
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -9,3 +10,25 @@ menu.onclick = () => {
 window.onscroll = () => {
     navbar.classList.remove('active');
 }
+//darkmode
+let darkmode = document.querySelector('#darkmode');
+darkmode.onclick = () => {
+    if(darkmode.classList.contains('bx-moon')){
+        darkmode.classList.replace('bx-moon','bx-sun');
+        document.body.classList.add('active');
+    }else{
+        darkmode.classList.replace('bx-sun','bx-moon');
+        document.body.classList.remove('active');
+    }
+}
+
+//scroll reveal 
+const sr = ScrollReveal ({
+    origin: 'top',
+    distance: '40px',
+    duration: '2000',
+    reset: true
+});
+
+
+sr.reveal('.inicio-text,.inicio-img, .nosotros-img,.nosotros-text, .box, .s-box, .contactanos-text, .btn, .contacto-box',{interval:150})
