@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 2rem;
     list-style: none;
     text-decoration: none;
 }
@@ -76,7 +76,7 @@ header{
 }
 .inicio{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -303,5 +303,39 @@ header{
         padding: 1.5rem;
         display: block;
         background: var(--bg-color);
+    }
+}
+@media (max-width:715px){
+    header{
+        padding: 10px 16px;
+    }
+    .inicio{
+        grid-template-columns: 1fr;
+    }
+    .nosotros{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .nosotros-img{
+        order: 2;
+    }
+}
+
+@media (max-width:515px){
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto .btn{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:450px){
+    :root{
+        --big-font: 2rem;
+        --h2-font: 1.4rem;
+    }
+    .inicio-text{
+        padding-top: 4rem;
     }
 }
