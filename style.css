@@ -224,3 +224,84 @@ header{
 .contactanos-text h2{
     font-size: var(--h2-font);
 }
+
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    gap: 1.5rem;
+
+}
+
+.contacto-box h3{
+    margin-bottom: 1rem;
+}
+
+.social{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.social i{
+    font-size: 20px;
+    margin-right: 1rem;
+    color: var(--text-color)
+}
+.social i:hover{
+    color: var(--main-color);
+}
+.contacto-box li a{
+    color: var(--text-color);
+}
+.contacto-box li a:hover{
+    color: var(--main-color);
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+.address i{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.address span{
+    margin-left: 1rem;
+}
+
+@media(max-width: 921px){
+    header{
+        padding: 14px 41px;
+    }
+    :root{
+        --big-font: 3rem;
+        --h2-font: 1.7rem;
+    }
+}
+@media(max-width: 768px){
+    header{
+        padding: 50px 8%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
+
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        background: var(--bg-color);
+    }
+}
