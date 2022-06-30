@@ -32,3 +32,4 @@ const sr = ScrollReveal ({
 
 
 sr.reveal('.inicio-text,.inicio-img, .nosotros-img,.nosotros-text, .box, .s-box, .contactanos-text, .btn, .contacto-box',{interval:150})
+

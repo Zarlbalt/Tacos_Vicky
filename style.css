@@ -222,7 +222,7 @@ header{
 .contactanos{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .contactanos-text span{
@@ -274,6 +274,7 @@ header{
 .address span{
     margin-left: 1rem;
 }
+
 
 
 @media(max-width: 921px){
@@ -352,5 +353,11 @@ header{
     }
     .inicio-text{
         padding-top: 4rem;
+    }
+    .contacto{
+        text-align: center;
+    }
+    .contacto .social{ 
+        justify-content: center;
     }
 }
